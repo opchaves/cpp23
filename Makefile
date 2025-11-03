@@ -1,9 +1,5 @@
-# Makefile for C++23 CMake project
-
-.PHONY: all build run test clean
 .PHONY: all build run test clean debug release
 
-all: build
 all: build
 
 build:

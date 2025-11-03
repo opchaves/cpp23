@@ -1,7 +1,7 @@
-#include <iostream>
 #include "cpp23/example.h"
+#include <print>
 
 int main() {
-    std::cout << "2 + 3 = " << add(2, 3) << std::endl;
-    return 0;
+  std::print("2 + 3 = {}\n", add(2, 3));
+  return 0;
 }

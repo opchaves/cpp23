@@ -8,5 +8,5 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(doctest)
 
 add_executable(cpp23_tests test_main.cpp)
-target_link_libraries(cpp23_tests PRIVATE cpp23_lib doctest)
+target_link_libraries(cpp23_tests PRIVATE cpp23 doctest)
 add_test(NAME cpp23_tests COMMAND cpp23_tests)
