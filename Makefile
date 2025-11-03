@@ -1,13 +1,14 @@
-.PHONY: all build run test clean debug release
+.PHONY: all build run test clean configure debug release
 
 all: build
 
+configure:
+	cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+
 build:
-	cmake -S . -B build
 	cmake --build build --config Debug
 
 debug:
-	cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
 	cmake --build build --config Debug
 
 release:
