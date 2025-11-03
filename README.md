@@ -9,9 +9,10 @@
 ## Build Instructions
 
 ```sh
+make configure  # Configure build in Debug mode
 make build      # Build in Debug mode (default)
 make debug      # Build in Debug mode
-make release    # Build in Release mode
+make release    # Configure and Build in Release mode
 ```
 
 ## Run CLI
