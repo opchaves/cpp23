@@ -1,6 +1,7 @@
 # C++23 Project with CMake and doctest
 
 ## Structure
+
 - `src/` — Library source code
 - `cli/` — Command-line executable
 - `tests/` — Unit tests using doctest
@@ -8,21 +9,31 @@
 ## Build Instructions
 
 ```sh
-cmake -S . -B build
-cmake --build build
+make build      # Build in Debug mode (default)
+make debug      # Build in Debug mode
+make release    # Build in Release mode
 ```
 
 ## Run CLI
+
 ```sh
-./build/cli/cpp23_cli
+make run        # Build and run CLI executable
 ```
 
 ## Run Tests
+
 ```sh
-cd build && ctest
+make test       # Build and run tests
+```
+
+## Clean Build
+
+```sh
+make clean      # Remove build directory
 ```
 
 ## Features
+
 - C++23 standard
 - CMake with extensions OFF
 - Exported compile commands
