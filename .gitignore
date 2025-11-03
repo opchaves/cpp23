@@ -1,0 +1,20 @@
+# Build and IDE files
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# MacOS
+.DS_Store
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test/coverage
+*.gcda
+*.gcno
+*.gcov
